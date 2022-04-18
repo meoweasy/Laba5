@@ -81,8 +81,7 @@ namespace Laba5View
                 {
                     _orderLogic.Delete(new OrderBM
                     {
-                        Id =
-                   id
+                        Id = id
                     });
                     LoadData();
                 }
@@ -92,6 +91,11 @@ namespace Laba5View
                    MessageBoxIcon.Error);
                 }
             }
+        }
+
+        private void button4_Click(object sender, EventArgs e)
+        {
+            //
         }
     }
 }

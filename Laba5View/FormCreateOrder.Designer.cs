@@ -39,6 +39,8 @@ namespace Laba5View
             this.button2 = new System.Windows.Forms.Button();
             this.label4 = new System.Windows.Forms.Label();
             this.dateTimePicker = new System.Windows.Forms.DateTimePicker();
+            this.label5 = new System.Windows.Forms.Label();
+            this.textBoxId = new System.Windows.Forms.TextBox();
             this.SuspendLayout();
             // 
             // label1
@@ -94,7 +96,7 @@ namespace Laba5View
             // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(131, 134);
+            this.button1.Location = new System.Drawing.Point(131, 163);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(75, 23);
             this.button1.TabIndex = 6;
@@ -104,7 +106,7 @@ namespace Laba5View
             // 
             // button2
             // 
-            this.button2.Location = new System.Drawing.Point(212, 134);
+            this.button2.Location = new System.Drawing.Point(212, 163);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(75, 23);
             this.button2.TabIndex = 7;
@@ -128,11 +130,29 @@ namespace Laba5View
             this.dateTimePicker.Size = new System.Drawing.Size(156, 23);
             this.dateTimePicker.TabIndex = 9;
             // 
+            // label5
+            // 
+            this.label5.AutoSize = true;
+            this.label5.Location = new System.Drawing.Point(16, 127);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(55, 15);
+            this.label5.TabIndex = 10;
+            this.label5.Text = "ID заказа";
+            // 
+            // textBoxId
+            // 
+            this.textBoxId.Location = new System.Drawing.Point(131, 124);
+            this.textBoxId.Name = "textBoxId";
+            this.textBoxId.Size = new System.Drawing.Size(100, 23);
+            this.textBoxId.TabIndex = 11;
+            // 
             // FormCreateOrder
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(296, 177);
+            this.ClientSize = new System.Drawing.Size(296, 197);
+            this.Controls.Add(this.textBoxId);
+            this.Controls.Add(this.label5);
             this.Controls.Add(this.dateTimePicker);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.button2);
@@ -163,5 +183,7 @@ namespace Laba5View
         private System.Windows.Forms.Button button2;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.DateTimePicker dateTimePicker;
+        private System.Windows.Forms.Label label5;
+        private System.Windows.Forms.TextBox textBoxId;
     }
 }

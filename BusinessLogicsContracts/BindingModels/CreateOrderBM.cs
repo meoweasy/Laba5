@@ -8,6 +8,7 @@ namespace BusinessLogicsContracts.BindingModels
 {
     public class CreateOrderBM
     {
+        public int? Id { get; set; }
         public int FurnitureId { get; set; }
         public string FurnitureName { get; set; }
         public int Count { get; set; }
