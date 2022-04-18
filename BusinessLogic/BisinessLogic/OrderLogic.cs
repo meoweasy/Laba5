@@ -72,7 +72,7 @@ namespace BusinessLogic.BisinessLogic
                 Count = model.Count,
                 Sum = model.Sum,
                 DateCreate = DateTime.Now,
-                DateImplement = DateTime.Now
+                DateImplement = model.DateImplement
             }); ;
         }
 

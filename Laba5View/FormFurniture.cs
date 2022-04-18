@@ -33,11 +33,11 @@ namespace Laba5View
             {
                 if (FurnitureMaterials.ContainsKey(form.Id))
                 {
-                    FurnitureMaterials[form.Id] = (form.Name, form.Count);
+                    FurnitureMaterials[form.Id] = (form.MaterialName, form.Count);
                 }
                 else
                 {
-                    FurnitureMaterials.Add(form.Id, (form.Name, form.Count));
+                    FurnitureMaterials.Add(form.Id, (form.MaterialName, form.Count));
                 }
                 LoadData();
             }
@@ -104,7 +104,7 @@ pc.Value.Item2 });
                 form.Count = FurnitureMaterials[id].Item2;
                 if (form.ShowDialog() == DialogResult.OK)
                 {
-                    FurnitureMaterials[form.Id] = (form.Name, form.Count);
+                    FurnitureMaterials[form.Id] = (form.MaterialName, form.Count);
                     LoadData();
                 }
             }

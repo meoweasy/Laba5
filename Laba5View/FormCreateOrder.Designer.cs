@@ -37,6 +37,8 @@ namespace Laba5View
             this.textBoxSum = new System.Windows.Forms.TextBox();
             this.button1 = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
+            this.label4 = new System.Windows.Forms.Label();
+            this.dateTimePicker = new System.Windows.Forms.DateTimePicker();
             this.SuspendLayout();
             // 
             // label1
@@ -69,22 +71,22 @@ namespace Laba5View
             // comboBox
             // 
             this.comboBox.FormattingEnabled = true;
-            this.comboBox.Location = new System.Drawing.Point(102, 6);
+            this.comboBox.Location = new System.Drawing.Point(131, 6);
             this.comboBox.Name = "comboBox";
             this.comboBox.Size = new System.Drawing.Size(156, 23);
             this.comboBox.TabIndex = 3;
-            this.comboBox.SelectedIndexChanged += new System.EventHandler(this.comboBox_SelectedIndexChanged);
             // 
             // textBoxCount
             // 
-            this.textBoxCount.Location = new System.Drawing.Point(102, 37);
+            this.textBoxCount.Location = new System.Drawing.Point(131, 37);
             this.textBoxCount.Name = "textBoxCount";
             this.textBoxCount.Size = new System.Drawing.Size(100, 23);
             this.textBoxCount.TabIndex = 4;
+            this.textBoxCount.TextChanged += new System.EventHandler(this.textBoxCount_TextChanged);
             // 
             // textBoxSum
             // 
-            this.textBoxSum.Location = new System.Drawing.Point(102, 65);
+            this.textBoxSum.Location = new System.Drawing.Point(131, 65);
             this.textBoxSum.Name = "textBoxSum";
             this.textBoxSum.Size = new System.Drawing.Size(100, 23);
             this.textBoxSum.TabIndex = 5;
@@ -92,7 +94,7 @@ namespace Laba5View
             // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(102, 94);
+            this.button1.Location = new System.Drawing.Point(131, 134);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(75, 23);
             this.button1.TabIndex = 6;
@@ -102,7 +104,7 @@ namespace Laba5View
             // 
             // button2
             // 
-            this.button2.Location = new System.Drawing.Point(183, 94);
+            this.button2.Location = new System.Drawing.Point(212, 134);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(75, 23);
             this.button2.TabIndex = 7;
@@ -110,11 +112,29 @@ namespace Laba5View
             this.button2.UseVisualStyleBackColor = true;
             this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.Location = new System.Drawing.Point(16, 101);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(107, 15);
+            this.label4.TabIndex = 8;
+            this.label4.Text = "Дата выполнения:";
+            // 
+            // dateTimePicker
+            // 
+            this.dateTimePicker.Location = new System.Drawing.Point(131, 95);
+            this.dateTimePicker.Name = "dateTimePicker";
+            this.dateTimePicker.Size = new System.Drawing.Size(156, 23);
+            this.dateTimePicker.TabIndex = 9;
+            // 
             // FormCreateOrder
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(271, 130);
+            this.ClientSize = new System.Drawing.Size(296, 177);
+            this.Controls.Add(this.dateTimePicker);
+            this.Controls.Add(this.label4);
             this.Controls.Add(this.button2);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.textBoxSum);
@@ -141,5 +161,7 @@ namespace Laba5View
         private System.Windows.Forms.TextBox textBoxSum;
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.Label label4;
+        private System.Windows.Forms.DateTimePicker dateTimePicker;
     }
 }

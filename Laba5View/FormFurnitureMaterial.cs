@@ -19,7 +19,7 @@ namespace Laba5View
             get { return Convert.ToInt32(comboBox.SelectedValue); }
             set { comboBox.SelectedValue = value; }
         }
-        public string DetailName { get { return comboBox.Text; } }
+        public string MaterialName { get { return comboBox.Text; } }
         public int Count
         {
             get { return Convert.ToInt32(textBox.Text); }

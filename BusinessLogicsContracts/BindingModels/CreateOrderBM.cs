@@ -12,5 +12,6 @@ namespace BusinessLogicsContracts.BindingModels
         public string FurnitureName { get; set; }
         public int Count { get; set; }
         public decimal Sum { get; set; }
+        public DateTime? DateImplement { get; set; }
     }
 }

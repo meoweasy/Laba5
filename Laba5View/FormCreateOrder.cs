@@ -87,8 +87,9 @@ namespace Laba5View
                     FurnitureId = Convert.ToInt32(comboBox.SelectedValue),
                     FurnitureName = comboBox.Text,
                     Count = Convert.ToInt32(textBoxCount.Text),
-                    Sum = Convert.ToDecimal(textBoxSum.Text)
-                });
+                    Sum = Convert.ToDecimal(textBoxSum.Text),
+                    DateImplement = dateTimePicker.Value
+                }) ;
                 MessageBox.Show("Сохранение прошло успешно", "Сообщение",
                MessageBoxButtons.OK, MessageBoxIcon.Information);
                 DialogResult = DialogResult.OK;
@@ -106,15 +107,17 @@ namespace Laba5View
             CalcSum();
         }
 
-        private void comboBox_SelectedIndexChanged(object sender, EventArgs e)
-        {
-            CalcSum();
-        }
+        
 
         private void button2_Click(object sender, EventArgs e)
         {
             DialogResult = DialogResult.Cancel;
             Close();
+        }
+
+        private void textBoxCount_TextChanged(object sender, EventArgs e)
+        {
+            CalcSum();
         }
     }
 }

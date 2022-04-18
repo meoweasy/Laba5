@@ -12,5 +12,6 @@ namespace BusinessLogicsContracts.BusinessLogicsContracts
     {
         List<OrderVM> Read(OrderBM model);
         void CreateOrder(CreateOrderBM model);
+        void Delete(OrderBM mpdel);
     }
 }
