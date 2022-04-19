@@ -17,6 +17,8 @@ namespace Laba5View
     {
         private readonly IFurnitureLogic _logicP;
         private readonly IOrderLogic _logicO;
+        public int Id { set { id = value; } }
+        private int? id;
         public FormCreateOrder(IFurnitureLogic logicP, IOrderLogic logicO)
         {
             InitializeComponent();
@@ -83,12 +85,14 @@ namespace Laba5View
         
             try
             {
-                _logicO.CreateOrder(new CreateOrderBM
+                _logicO.CreateOrUpdate(new OrderBM
                 {
+                    Id = id,
                     FurnitureId = Convert.ToInt32(comboBox.SelectedValue),
                     FurnitureName = comboBox.Text,
                     Count = Convert.ToInt32(textBoxCount.Text),
                     Sum = Convert.ToDecimal(textBoxSum.Text),
+                    DateCreate = dateTimePicker1.Value,
                     DateImplement = dateTimePicker.Value
                 }) ;
                 MessageBox.Show("Сохранение прошло успешно", "Сообщение",

@@ -35,8 +35,8 @@ namespace BusinessLogic.BisinessLogic
             var element = _orderStorage.GetElement(new OrderBM
             {
                 Id = model.Id
-            });
-            if (element != null)
+            }) ;
+            if (element != null && element.Id != model.Id)
             {
                 throw new Exception("Уже есть заказ с таким ID");
             }
@@ -62,19 +62,5 @@ namespace BusinessLogic.BisinessLogic
             }
             _orderStorage.Delete(model);
         }
-
-        public void CreateOrder(CreateOrderBM model)
-        {
-            _orderStorage.Insert(new OrderBM
-            {
-                FurnitureId = model.FurnitureId,
-                FurnitureName = model.FurnitureName,
-                Count = model.Count,
-                Sum = model.Sum,
-                DateCreate = DateTime.Now,
-                DateImplement = model.DateImplement
-            }); ;
-        }
-
     }
 }

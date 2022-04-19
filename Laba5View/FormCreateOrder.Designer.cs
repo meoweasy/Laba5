@@ -40,7 +40,7 @@ namespace Laba5View
             this.label4 = new System.Windows.Forms.Label();
             this.dateTimePicker = new System.Windows.Forms.DateTimePicker();
             this.label5 = new System.Windows.Forms.Label();
-            this.textBoxId = new System.Windows.Forms.TextBox();
+            this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
             this.SuspendLayout();
             // 
             // label1
@@ -117,7 +117,7 @@ namespace Laba5View
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(16, 101);
+            this.label4.Location = new System.Drawing.Point(16, 134);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(107, 15);
             this.label4.TabIndex = 8;
@@ -125,7 +125,7 @@ namespace Laba5View
             // 
             // dateTimePicker
             // 
-            this.dateTimePicker.Location = new System.Drawing.Point(131, 95);
+            this.dateTimePicker.Location = new System.Drawing.Point(131, 128);
             this.dateTimePicker.Name = "dateTimePicker";
             this.dateTimePicker.Size = new System.Drawing.Size(156, 23);
             this.dateTimePicker.TabIndex = 9;
@@ -133,25 +133,25 @@ namespace Laba5View
             // label5
             // 
             this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(16, 127);
+            this.label5.Location = new System.Drawing.Point(16, 100);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(55, 15);
+            this.label5.Size = new System.Drawing.Size(76, 15);
             this.label5.TabIndex = 10;
-            this.label5.Text = "ID заказа";
+            this.label5.Text = "Дата записи:";
             // 
-            // textBoxId
+            // dateTimePicker1
             // 
-            this.textBoxId.Location = new System.Drawing.Point(131, 124);
-            this.textBoxId.Name = "textBoxId";
-            this.textBoxId.Size = new System.Drawing.Size(100, 23);
-            this.textBoxId.TabIndex = 11;
+            this.dateTimePicker1.Location = new System.Drawing.Point(131, 94);
+            this.dateTimePicker1.Name = "dateTimePicker1";
+            this.dateTimePicker1.Size = new System.Drawing.Size(156, 23);
+            this.dateTimePicker1.TabIndex = 11;
             // 
             // FormCreateOrder
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(296, 197);
-            this.Controls.Add(this.textBoxId);
+            this.Controls.Add(this.dateTimePicker1);
             this.Controls.Add(this.label5);
             this.Controls.Add(this.dateTimePicker);
             this.Controls.Add(this.label4);
@@ -184,6 +184,6 @@ namespace Laba5View
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.DateTimePicker dateTimePicker;
         private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.TextBox textBoxId;
+        private System.Windows.Forms.DateTimePicker dateTimePicker1;
     }
 }

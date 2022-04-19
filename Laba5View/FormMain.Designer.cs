@@ -96,7 +96,7 @@ namespace Laba5View
             // 
             // button2
             // 
-            this.button2.Location = new System.Drawing.Point(475, 68);
+            this.button2.Location = new System.Drawing.Point(475, 126);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(112, 23);
             this.button2.TabIndex = 3;
@@ -116,7 +116,7 @@ namespace Laba5View
             // 
             // button4
             // 
-            this.button4.Location = new System.Drawing.Point(475, 126);
+            this.button4.Location = new System.Drawing.Point(475, 68);
             this.button4.Name = "button4";
             this.button4.Size = new System.Drawing.Size(112, 23);
             this.button4.TabIndex = 5;

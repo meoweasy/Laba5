@@ -95,7 +95,15 @@ namespace Laba5View
 
         private void button4_Click(object sender, EventArgs e)
         {
-            //
+            if (dataGridView.SelectedRows.Count == 1)
+            {
+                var form = Program.Container.Resolve<FormCreateOrder>();
+                form.Id = Convert.ToInt32(dataGridView.SelectedRows[0].Cells[0].Value);
+                if (form.ShowDialog() == DialogResult.OK)
+                {
+                    LoadData();
+                }
+            }
         }
     }
 }

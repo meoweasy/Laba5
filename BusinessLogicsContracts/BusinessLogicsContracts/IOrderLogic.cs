@@ -11,7 +11,7 @@ namespace BusinessLogicsContracts.BusinessLogicsContracts
     public interface IOrderLogic
     {
         List<OrderVM> Read(OrderBM model);
-        void CreateOrder(CreateOrderBM model);
+        void CreateOrUpdate(OrderBM model);
         void Delete(OrderBM mpdel);
     }
 }
